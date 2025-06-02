@@ -1,0 +1,27 @@
+.blog p, .blog ol {
+  margin: 4em 0;
+  font-size: 0.9em;
+}
+
+.blog li:target {
+  background-color: var(--color-2);
+}
+
+@media only screen and (max-width: 480px) {
+  #layout #main {
+    outline: none;
+    border: none;
+  }
+
+  #sidebar li {
+    border: 2px dashed var(--color-2);
+    outline: none;
+    margin: 0;
+  }
+
+  .blog li {
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}

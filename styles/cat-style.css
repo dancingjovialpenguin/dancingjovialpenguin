@@ -1,0 +1,12 @@
+#cat {
+  position: absolute;
+  bottom: 0;
+  height: 5%;
+  transform: scaleX(-1);
+  animation: cat-run 10s infinite linear;
+}
+
+@keyframes cat-run {
+  0% { bottom: 20px; left: -10%; }
+  100% { bottom: 20px; left: 100%; }
+}
