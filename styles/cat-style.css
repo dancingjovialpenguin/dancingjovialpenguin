@@ -4,6 +4,7 @@
   height: 5%;
   transform: scaleX(-1);
   animation: cat-run 10s infinite linear;
+  cursor: pointer;
 }
 
 @keyframes cat-run {
