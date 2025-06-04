@@ -87,7 +87,7 @@ a:hover {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: url("../images/index-background-image.png");
+  background-image: linear-gradient(rgba(252, 193, 255, 0.25)), url("../images/index-background-image.png");
   background-attachment: fixed;
   background-position: bottom;
 }
@@ -141,6 +141,7 @@ a:hover {
   outline: 2px dashed var(--color-2);
   background-color: var(--color-1);
   box-shadow: 0px 5px 0 0 var(--color-3);
+  font-size: 1.15em;
   font-family: "Ribeye Marrow", sans-serif;
 }
 
@@ -171,7 +172,6 @@ a:hover {
     width: 100%;
     height: 100%;
     margin: 0;
-    outline: scroll;
   }
 
   #sidebar {
@@ -192,12 +192,20 @@ a:hover {
     width: 100%;
     padding: 0.5em;
     background-color: var(--color-3);
-    box-shadow: none;
+    box-shadow: inset 0 -5px 10px rgba(248, 115, 255, 0.25);
+  }
+
+  #sidebar li:hover {
+    box-shadow: inset 0 5px 10px rgba(240, 255, 240, 0.25);
   }
 }
 
 @media only screen and (max-width: 480px) {
   #sidebar ul {
     padding: 0;
+  }
+
+  #sidebar li, #sidebar li:hover {
+    box-shadow: none;
   }
 }
