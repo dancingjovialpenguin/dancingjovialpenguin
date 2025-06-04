@@ -26,7 +26,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   font-family: "Source Code Pro", monospace;
   background-color: var(--color-1);
@@ -87,7 +87,7 @@ a:hover {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(252, 193, 255, 0.25)), url("../images/index-background-image.png");
+  background-image: url("../images/index-background-image.png");
   background-attachment: fixed;
   background-position: bottom;
 }
@@ -115,6 +115,10 @@ a:hover {
   outline: 10px dashed var(--color-2);
   background-color: rgba(188, 197, 252, 0.5);
   backdrop-filter: blur(15px);
+}
+
+#main p {
+  margin-bottom: 2em;
 }
 
 #main section:not(#about) {
@@ -161,6 +165,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 750px) {
+  body {
+    font-size: 16px;
+  }
+  
   #layout {
     display: flex;
     flex-direction: column;
