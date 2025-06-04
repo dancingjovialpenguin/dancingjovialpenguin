@@ -1,7 +1,7 @@
 # This code converts Markdown (.md) code into formatted HTML code.
 # Currently, it can only convert into h1, h2, p, and ol elements.
 
-blog_name = 'insert-blog-name'
+blog_name = 'radical-feminism-is-not-inherently-transphobic'
 
 with open(f'{blog_name}.md') as f:
     markdown = f.read()
