@@ -141,7 +141,6 @@ a:hover {
 
 #sidebar li {
   margin: 0 0 1em 0;
-  padding: 0 1em;
   outline: 2px dashed var(--color-2);
   background-color: var(--color-1);
   box-shadow: 0px 5px 0 0 var(--color-3);
@@ -151,6 +150,7 @@ a:hover {
 
 #sidebar li a {
   display: block;
+  padding: 0 1em;
   color: var(--dark-color-3);
   font-weight: 700;
   text-decoration: none;
@@ -198,7 +198,6 @@ a:hover {
 
   #sidebar li {
     width: 100%;
-    padding: 0.5em;
     background-color: var(--color-3);
     box-shadow: inset 0 -5px 10px rgba(248, 115, 255, 0.25);
     font-size: 1em;
@@ -206,6 +205,10 @@ a:hover {
 
   #sidebar li:hover {
     box-shadow: inset 0 5px 10px rgba(240, 255, 240, 0.25);
+  }
+
+  #sidebar li a {
+    padding: 0.5em 1.5em;
   }
 }
 
