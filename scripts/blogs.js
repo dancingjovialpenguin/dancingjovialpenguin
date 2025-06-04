@@ -4,7 +4,7 @@ const template = `
   <section id="sidebar">
     <ul id="navigation">
       <li>
-        <a href="ref-"><a href="/#blogs">go back</a></a>
+        <a href="/#blogs">go back</a>
       </li>
     </ul>
   </section>
