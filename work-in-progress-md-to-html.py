@@ -33,16 +33,49 @@ class Tokenizer:
         self.string = string
         self.tokens = []
 
+        self._current_element = Element('p', '')
         self._current_index = 0
 
+    # This method checks if there is a next character and if so,
+    # checks if it equals to the passed `character`.
     def _is_next_character(self, character):
         return (not self._current_index + 1 >= len(self.string)) and self.string[self._current_index + 1] == character
 
     def tokenize(self):
         while self._current_index < len(self.string):
             current_character = self.string[self._current_index]
-            current_element = Element('', '')
 
             if current_character == '#':
-                # TODO ...
-                pass
+                hash_count = 1
+
+                while self._is_next_character('#'):
+                    hash_count += 1
+                    self._current_index += 1
+
+                self._current_element.element_name = 'h' + str(hash_count)
+
+                print(self._current_element)
+            
+            elif current_character.isnumeric() and self._is_next_character('.'):
+                self._current_element.element_name = 'ol_li'
+            elif (current_character == '*' or current_character == '-') and self._is_next_character(' '):
+                self._current_element.element_name = 'ul_li'
+            elif current_character == '\n':
+                print(self._current_element)
+                self.tokens.append(self._current_element)
+
+                self._current_element.element_name = 'p'
+                self._current_element.content = ''
+            else:
+                self._current_element.content += current_character
+
+            self._current_index += 1
+
+        return self.tokens
+    
+string = """
+# test
+"""
+
+tokenizer = Tokenizer(string)
+print(tokenizer.tokenize())

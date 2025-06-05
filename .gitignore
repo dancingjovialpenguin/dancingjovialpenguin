@@ -1,1 +1,3 @@
 .DS_Store
+blogs/*
+!blogs/why-we-need-a-pride-month.html
