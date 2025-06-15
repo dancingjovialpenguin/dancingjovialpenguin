@@ -13,7 +13,7 @@
     border: none;
   }
 
-  #sidebar li {
+  #sidebar #navigation li {
     border: 2px dashed var(--color-2);
     outline: none;
     margin: 0;
