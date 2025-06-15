@@ -133,13 +133,20 @@ a:hover {
   display: none;
 }
 
-#sidebar ul {
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar #navigation {
   margin: 0;
-  padding: 2em;
+  padding: 0 2em;
   list-style: none;
 }
 
-#sidebar li {
+#sidebar #navigation li {
   margin: 0 0 1em 0;
   outline: 2px dashed var(--color-2);
   background-color: var(--color-1);
@@ -148,7 +155,7 @@ a:hover {
   font-family: "Ribeye Marrow", sans-serif;
 }
 
-#sidebar li a {
+#sidebar #navigation li a {
   display: block;
   padding: 0 1em;
   color: var(--dark-color-3);
@@ -156,19 +163,35 @@ a:hover {
   text-decoration: none;
 }
 
-#sidebar li:hover {
+#sidebar #navigation li:hover {
   background-color: var(--color-2);
 }
 
-#sidebar li:hover a {
+#sidebar #navigation li:hover a {
   text-decoration: underline;
+}
+
+#images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  width: 100%;
+  padding: 0 2em;
+  list-style: none;
+  gap: 12px;
+}
+
+#images li img {
+  width: 50px;
+  height: 25px;
+  outline: 4px double var(--dark-color-3);
 }
 
 @media only screen and (max-width: 750px) {
   body {
     font-size: 16px;
   }
-  
+
   #layout {
     display: flex;
     flex-direction: column;
@@ -187,7 +210,7 @@ a:hover {
     z-index: 2;
   }
 
-  #sidebar ul {
+  #sidebar #navigation {
     display: flex;
     width: 100%;
     padding: 2em;
@@ -196,28 +219,39 @@ a:hover {
     text-align: center;
   }
 
-  #sidebar li {
+  #sidebar #navigation li {
     width: 100%;
     background-color: var(--color-3);
     box-shadow: inset 0 -5px 10px rgba(248, 115, 255, 0.25);
     font-size: 1em;
   }
 
-  #sidebar li:hover {
+  #sidebar #navigation li:hover {
     box-shadow: inset 0 5px 10px rgba(240, 255, 240, 0.25);
   }
 
-  #sidebar li a {
+  #sidebar #navigation li a {
     padding: 0.5em 1.5em;
+  }
+
+  #images {
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 }
 
 @media only screen and (max-width: 480px) {
-  #sidebar ul {
+  #sidebar #navigation {
     padding: 0;
   }
 
-  #sidebar li, #sidebar li:hover {
+  #sidebar #navigation li,
+  #sidebar #navigation li:hover {
     box-shadow: none;
+  }
+
+  #images {
+    padding: 2em 0;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
