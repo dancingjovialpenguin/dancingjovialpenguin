@@ -106,7 +106,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 4em;
-  padding: 4em 2em;
   height: 75%;
   width: 50%;
   overflow: scroll;
@@ -170,6 +169,14 @@ a:hover {
 
 #sidebar #navigation li:hover a {
   text-decoration: underline;
+}
+
+#main section, #about {
+  padding: 4em 2em;
+}
+
+#obsessions ul li {
+  margin-bottom: 1em;
 }
 
 #images {
