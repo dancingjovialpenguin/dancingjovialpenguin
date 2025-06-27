@@ -171,11 +171,13 @@ a:hover {
   text-decoration: underline;
 }
 
-#main section, #about {
+#main section,
+#about {
   padding: 4em 2em;
 }
 
-#obsessions ul li {
+#obsessions ul li,
+#socials ul li {
   margin-bottom: 1em;
 }
 
@@ -250,8 +252,17 @@ a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  #main {
+    outline: 5px dashed var(--color-2);
+  }
+
   #sidebar #navigation {
     padding: 0;
+  }
+
+  #sidebar #navigation li {
+    margin: 1em 0 calc(1em + 5px) 0;
+    outline: 2px double var(--color-2);
   }
 
   #sidebar #navigation li,
