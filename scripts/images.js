@@ -5,7 +5,7 @@ const imagesUl = document.getElementById("images");
 function placeImages() {
   let screenWidth = window.innerWidth;
 
-  if (screenWidth <= 750) {
+  if (screenWidth <= 768) {
     aboutSectionMainTextDiv.insertBefore(
       imagesUl,
       aboutSectionMainTextDiv.children[2]

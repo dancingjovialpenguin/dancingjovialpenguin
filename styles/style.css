@@ -181,23 +181,7 @@ a:hover {
   margin-bottom: 1em;
 }
 
-#images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  width: 100%;
-  padding: 0 2em;
-  list-style: none;
-  gap: 12px;
-}
-
-#images li img {
-  width: 50px;
-  height: 25px;
-  outline: 4px double var(--dark-color-3);
-}
-
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -244,11 +228,6 @@ a:hover {
   #sidebar #navigation li a {
     padding: 0.5em 1.5em;
   }
-
-  #images {
-    padding: 0;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -268,10 +247,5 @@ a:hover {
   #sidebar #navigation li,
   #sidebar #navigation li:hover {
     box-shadow: none;
-  }
-
-  #images {
-    padding: 2em 0;
-    grid-template-columns: repeat(3, 1fr);
   }
 }
