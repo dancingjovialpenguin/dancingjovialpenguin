@@ -1,5 +1,6 @@
-.blog p, .blog ol {
-  margin: 2em 0;
+.blog p,
+.blog ol {
+  margin: 2.5em 0;
   font-size: 0.9em;
 }
 
@@ -9,6 +10,48 @@
 
 .center {
   text-align: center;
+}
+
+#definitions-button {
+  width: 100%;
+  margin: 2em 0;
+  padding: 0.5em;
+  border: 2px double var(--color-2);
+  background-color: var(--color-3);
+  color: var(--dark-color-2);
+  font-weight: bold;
+  box-shadow: 0 5px 0 0 #619962;
+}
+
+#definitions-button.hide-state {
+  margin-bottom: 0;
+  border: 2px double var(--color-3);
+  background-color: var(--color-2);
+  color: var(--dark-color-3);
+  box-shadow: 0 5px 0 0 #b985bc;
+}
+
+#definitions-button:hover {
+  background-color: var(--color-2);
+  text-decoration: underline;
+}
+
+#definitions-button:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+#definitions-box {
+  display: none;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  border: 2px double var(--dark-color-3);
+  font-size: 0.85em;
+}
+
+#definitions-box li span {
+  font-weight: bold;
 }
 
 .image-container {
@@ -39,7 +82,7 @@
     margin: 0;
   }
 
-  .blog li {
+  .blog :not(.dont-break) li {
     word-break: break-all;
     word-wrap: break-word;
     overflow-wrap: break-word;
