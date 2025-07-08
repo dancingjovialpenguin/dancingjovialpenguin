@@ -181,6 +181,23 @@ a:hover {
   margin-bottom: 1em;
 }
 
+.poetic-piece {
+  padding: 2em;
+  color: var(--dark-color-3);
+  font-size: 0.8em;
+}
+
+.poetic-piece p {
+  text-align: center;
+  font-style: italic;
+}
+
+.poetic-piece span {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: 16px;

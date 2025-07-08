@@ -70,6 +70,12 @@
   text-align: center;
 }
 
+.blog ol li {
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 @media only screen and (max-width: 480px) {
   #layout #main {
     outline: none;
