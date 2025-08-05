@@ -199,6 +199,20 @@ a:hover {
   font-weight: bold;
 }
 
+.time-marker {
+  display: block;
+}
+
+.time-marker:not(:first-of-type) {
+  padding-top: 2em;
+}
+
+.time-marker::after {
+  content: "";
+  display: block;
+  outline: 0.5px dashed var(--blue-text-color);
+}
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: 16px;
