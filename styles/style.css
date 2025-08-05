@@ -5,17 +5,21 @@
 }
 
 :root {
-  --color-1: #bcc5fc;
-  --color-2: #b0ffb1;
-  --color-3: #fcc1ff;
-  --dark-color-1: #350cc9;
-  --dark-color-2: #065b27;
-  --dark-color-3: #ad00ec;
+  --blue-text-color: #350cc9;
+  --green-link-color: #065b27;
+  --purple-text-color: #ad00ec;
+
+  --main-background-color: rgba(188, 197, 252, 0.5);
+  --main-box-shadow-color: rgba(255, 255, 255, 0.5);
+
+  --green-outline-color: #b0ffb1;
+  --body-background-color: #bcc5fc;
+  --pink: #fcc1ff;
 }
 
 ::selection {
   background-color: #000;
-  color: var(--color-3);
+  color: var(--pink);
 }
 
 html,
@@ -29,8 +33,8 @@ body {
   font-size: 18px;
   line-height: 1.5;
   font-family: "Source Code Pro", monospace;
-  background-color: var(--color-1);
-  color: var(--dark-color-1);
+  background-color: var(--body-background-color);
+  color: var(--blue-text-color);
   overflow: hidden;
 }
 
@@ -50,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-color-3);
+  color: var(--purple-text-color);
   font-family: "Ribeye Marrow", sans-serif;
 }
 
@@ -71,7 +75,7 @@ h5 {
 }
 
 a {
-  color: var(--dark-color-2);
+  color: var(--green-link-color);
   font-weight: 700;
   text-decoration: none;
 }
@@ -103,18 +107,15 @@ a:hover {
 }
 
 #main {
-  display: flex;
-  flex-direction: column;
-  gap: 4em;
   height: 75%;
   width: 50%;
   overflow: scroll;
-  border-left: 10px double var(--color-3);
-  border-right: 10px double var(--color-3);
-  outline: 10px dashed var(--color-2);
-  background-color: rgba(188, 197, 252, 0.5);
+  border-left: 10px double var(--pink);
+  border-right: 10px double var(--pink);
+  outline: 10px dashed var(--green-outline-color);
+  background-color: var(--main-background-color);
   backdrop-filter: blur(5px) contrast(150%);
-  box-shadow: inset 0 0px 50px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0px 50px 5px var(--main-box-shadow-color);
 }
 
 #main p {
@@ -148,9 +149,9 @@ a:hover {
 
 #sidebar #navigation li {
   margin: 0 0 1em 0;
-  outline: 2px dashed var(--color-2);
-  background-color: var(--color-1);
-  box-shadow: 0px 5px 0 0 var(--color-3);
+  outline: 2px dashed var(--green-outline-color);
+  background-color: var(--body-background-color);
+  box-shadow: 0px 5px 0 0 var(--pink);
   font-size: 1.15em;
   font-family: "Ribeye Marrow", sans-serif;
 }
@@ -158,13 +159,13 @@ a:hover {
 #sidebar #navigation li a {
   display: block;
   padding: 0 1em;
-  color: var(--dark-color-3);
+  color: var(--purple-text-color);
   font-weight: 700;
   text-decoration: none;
 }
 
 #sidebar #navigation li:hover {
-  background-color: var(--color-2);
+  background-color: var(--green-outline-color);
 }
 
 #sidebar #navigation li:hover a {
@@ -183,7 +184,7 @@ a:hover {
 
 .poetic-piece {
   padding: 2em;
-  color: var(--dark-color-3);
+  color: var(--purple-text-color);
   font-size: 0.8em;
 }
 
@@ -232,7 +233,7 @@ a:hover {
 
   #sidebar #navigation li {
     width: 100%;
-    background-color: var(--color-3);
+    background-color: var(--pink);
     box-shadow: inset 0 -5px 10px rgba(248, 115, 255, 0.25);
     font-size: 1em;
   }
@@ -249,7 +250,7 @@ a:hover {
 
 @media only screen and (max-width: 480px) {
   #main {
-    outline: 5px dashed var(--color-2);
+    outline: 5px dashed var(--green-outline-color);
   }
 
   #sidebar #navigation {
@@ -258,7 +259,7 @@ a:hover {
 
   #sidebar #navigation li {
     margin: 1em 0 calc(1em + 5px) 0;
-    outline: 2px double var(--color-2);
+    outline: 2px double var(--green-outline-color);
   }
 
   #sidebar #navigation li,

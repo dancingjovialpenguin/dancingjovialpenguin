@@ -5,7 +5,7 @@
 }
 
 .blog li:target {
-  background-color: var(--color-2);
+  background-color: var(--green-outline-color);
 }
 
 .center {
@@ -16,23 +16,23 @@
   width: 100%;
   margin: 2em 0;
   padding: 0.5em;
-  border: 2px double var(--color-2);
-  background-color: var(--color-3);
-  color: var(--dark-color-2);
+  border: 2px double var(--green-outline-color);
+  background-color: var(--pink);
+  color: var(--green-link-color);
   font-weight: bold;
   box-shadow: 0 5px 0 0 #619962;
 }
 
 #definitions-button.hide-state {
   margin-bottom: 0;
-  border: 2px double var(--color-3);
-  background-color: var(--color-2);
-  color: var(--dark-color-3);
+  border: 2px double var(--pink);
+  background-color: var(--green-outline-color);
+  color: var(--purple-text-color);
   box-shadow: 0 5px 0 0 #b985bc;
 }
 
 #definitions-button:hover {
-  background-color: var(--color-2);
+  background-color: var(--green-outline-color);
   text-decoration: underline;
 }
 
@@ -46,7 +46,7 @@
   flex-direction: column;
   gap: 2em;
   padding: 2em;
-  border: 2px double var(--dark-color-3);
+  border: 2px double var(--purple-text-color);
   font-size: 0.85em;
 }
 
@@ -60,7 +60,7 @@
 
 .image-container img {
   width: 100%;
-  border: 4px double var(--dark-color-3);
+  border: 4px double var(--purple-text-color);
 }
 
 .image-container span {
@@ -83,7 +83,7 @@
   }
 
   #sidebar #navigation li {
-    border: 2px dashed var(--color-2);
+    border: 2px dashed var(--green-outline-color);
     outline: none;
     margin: 0;
   }

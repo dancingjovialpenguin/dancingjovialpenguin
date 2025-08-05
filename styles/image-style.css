@@ -16,7 +16,7 @@
 #images li img {
   width: 50px;
   height: 25px;
-  outline: 4px double var(--dark-color-3);
+  outline: 4px double var(--purple-text-color);
 }
 
 @media only screen and (max-width: 768px) {
