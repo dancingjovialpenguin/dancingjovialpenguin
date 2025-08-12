@@ -106,7 +106,7 @@ def clear_markdown(markdown: str):
         '’', "'").replace('“', '"').replace('”', '"')
 
 
-blog_name = 'Radical feminism is important'
+blog_name = 'Example blog post name'
 blog_file_name = blog_name.lower().replace(' ', '-')
 
 description = ''

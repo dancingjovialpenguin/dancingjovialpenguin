@@ -210,7 +210,7 @@ a:hover {
 .time-marker::after {
   content: "";
   display: block;
-  outline: 0.5px dashed var(--blue-text-color);
+  outline: 1px dashed var(--blue-text-color);
 }
 
 @media only screen and (max-width: 768px) {
