@@ -70,7 +70,7 @@
   text-align: center;
 }
 
-.blog ol li {
+.blog ol:not(.dont-break) li {
   word-break: break-all;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -86,11 +86,5 @@
     border: 2px dashed var(--green-outline-color);
     outline: none;
     margin: 0;
-  }
-
-  .blog :not(.dont-break) li {
-    word-break: break-all;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
   }
 }
