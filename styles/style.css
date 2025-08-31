@@ -213,6 +213,10 @@ a:hover {
   outline: 1px dashed var(--blue-text-color);
 }
 
+#note-on-radical-feminism {
+  scroll-margin-top: 3em;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: 16px;
